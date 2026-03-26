@@ -1,0 +1,227 @@
+#1.
+'''
+n=11
+for i in range(1,10,1):
+    print(i,end="")
+'''
+#2.
+'''
+n=5
+for i in range(1,10,2):
+    print(i,end="")
+'''
+
+'''
+#3.
+
+n=5
+for i in range(2,11,2):
+    print(i,end="")
+
+'''
+
+'''
+#4.
+
+n=22
+for i in range(3,22,3):
+    print(i,end="")
+
+'''
+'''
+#5.
+
+n=30
+for i in range(5,30,5):
+    print(i,end="")
+
+'''
+
+'''
+#6.
+
+n=15
+for i in range(2,15,2):
+    print(i,end="")
+
+'''
+'''
+#7.
+
+n=15
+for i in range(2,n+1):
+    if i %2==0 or i %3==0:
+        print(i,end="")
+'''
+'''
+#8.
+
+n=15
+for i in range(2,n+1):
+    if i %2==0 or i %5==0 or i %7==0:
+        print(i,end="")
+'''
+'''
+#9.
+
+n=19
+for i in range(2,n+1):
+    if i %3==0 or i %5==0 or i %7==0:
+        print(i,end="")
+'''
+'''
+#10.
+
+num=123456789
+sum=0
+while num>0:
+    sum+=num%10
+    num//=10
+print(sum)
+
+'''
+'''
+#11.
+
+num=123456789
+count=0
+while num>0:
+    num//=10
+    count+=1
+print(count)
+
+'''
+'''
+#12.
+
+num=20
+for i in range(1,num+1):
+    if num %i==0:
+        print(i,end="")
+
+'''
+'''
+#13.
+
+num=20
+count=0
+for i in range(1,num+1):
+    if num%i==0:
+        count+=1
+print(count)
+
+'''
+'''
+#14.
+num=int(input("Enter your number:"))
+for i in range(1,num):
+    if num%i==2:
+        if i:
+            print("YES")
+        else:
+            print("NO")
+'''
+'''
+#15.
+
+num=15
+for i in range(2,num+1):
+    if i%2==1:
+        print(i,end="")
+
+'''
+'''
+#16.
+
+a=10
+b=20
+c=1
+for i in range(1,min(a,b)+1):
+    if a%i==0 and b%i==0:
+        c=i
+print(c)
+
+'''
+'''
+#17.
+
+m=int(input("Enter the number:"))
+n=int(input("Enter the number:"))
+for i in range(1,min(m,n)+1):
+    if n%i==0 and m%i==0:
+        print(i,end="")
+
+'''
+'''
+#18.
+
+a,b=0 ,1
+while a<=50:
+    print(a,end="")
+    a,b=b,a+b
+
+'''
+'''
+#19.
+
+num=int(input("Enter your number"))
+fact=1
+for i in range(1,num+1):
+    fact*=i
+print("Factorial of",num,"is:",fact)
+
+'''
+#20.
+'''
+numbers= list(map(int,input("Enter your Number").split()))
+
+even_sum = 0
+odd_sum = 0
+
+for num in numbers:
+    if num % 2 == 0:
+        even_sum +=num
+
+    else:
+        odd_sum += num
+
+print("Even sum=", even_sum)
+print("Odd sum =", odd_sum)
+'''
+#21.
+'''
+n=int(input("Enter your number"))
+
+temp = n
+rev = 0
+
+while temp >0:
+      digit= temp % 10
+      rev = rev*10 + digit
+      temp //=10
+
+if rev ==n:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+'''
+
+#22.
+'''
+n=int(input("Enter your number"))
+
+temp = n
+sum_digits = 0
+
+while temp >0:
+    digit = temp % 10
+    sum_digits +=digit **3
+    temp //=10
+
+if sum_digits == n:
+    print("Armstrong Number")
+
+else:
+    print("Non an Armstrong Number")
+
+'''
